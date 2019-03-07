@@ -6,11 +6,11 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
-            var favBook = new Book("Harry Potter", "Fantasy");
+            var harryPotter = new Book("Harry Potter", "Fantasy");
+            var green = new Color("blue", "Primary");
 
-            var openBook = new Book(4);
-
-            Console.WriteLine(favBook.ToString());
+            Console.WriteLine(harryPotter.ToString());
+            Console.WriteLine(green.FavColor());
             Console.ReadLine();
         }
     }
