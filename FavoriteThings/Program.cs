@@ -6,7 +6,12 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var favBook = new Book("Harry Potter", "Fantasy");
+
+            var openBook = new Book(4);
+
+            Console.WriteLine(favBook.ToString());
+            Console.ReadLine();
         }
     }
 }
