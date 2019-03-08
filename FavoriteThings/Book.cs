@@ -7,7 +7,7 @@ namespace FavoriteThings
     class Book
     {
         //Properties
-        public string Name { get; }
+        public string BookName { get; }
         public string Genre { get; }
 
         //Fields
@@ -15,14 +15,14 @@ namespace FavoriteThings
         //Constructor
         public Book(string name, string genre)
         {
-            Name = name;
+            BookName = name;
             Genre = genre;
         }
 
         //Methods
-        public override string ToString()
+        public string ToString()
         {
-            return $"{Name} is my favorite book and it is in the {Genre} genre";
+            return $"{BookName} is my favorite book and it is in the {Genre} genre";
         }
     }
 }

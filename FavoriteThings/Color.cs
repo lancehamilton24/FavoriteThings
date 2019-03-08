@@ -24,5 +24,9 @@ namespace FavoriteThings
         {
             return $"My favorite color is {ColorName} and it is a {ColorClass} color";
         }
+        public string Paint()
+        {
+            return $"Paint everything {ColorName} becauase it is a {ColorClass} color";
+        }
     }
 }

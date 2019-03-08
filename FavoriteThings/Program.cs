@@ -7,10 +7,15 @@ namespace FavoriteThings
         static void Main(string[] args)
         {
             var harryPotter = new Book("Harry Potter", "Fantasy");
-            var green = new Color("blue", "Primary");
+            var blue = new Color("blue", "Primary");
+            var green = new Color("green", "primary");
+            var newCar = new Car("Toyota", CarType.Suv);
 
             Console.WriteLine(harryPotter.ToString());
-            Console.WriteLine(green.FavColor());
+            Console.WriteLine(blue.FavColor());
+            Console.WriteLine(green.Paint());
+            Console.WriteLine(newCar.Offer());
+            Console.WriteLine(newCar.Rejection());
             Console.ReadLine();
         }
     }
